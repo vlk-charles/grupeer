@@ -37,7 +37,9 @@ website that includes all your current and past investments. This spreadsheet is
 sorted by date of purchase. If you sort the list of the downloaded PDF files
 numerically, it should match the order in the spreadsheet. This list can then be
 pasted as another column in the spreadsheet to pair the investments with their
-respective agreements. To obtain the sorted list, do:
+respective agreements. You should save this in a separate file and keep
+the original file exactly as it was exported from the website as it may be
+required for other automatic processes. To obtain the sorted list, do:
 ```
 ls *.pdf | sort -n
 ```
