@@ -43,3 +43,17 @@ required for other automatic processes. To obtain the sorted list, do:
 ```
 ls *.pdf | sort -n
 ```
+
+### Renaming files
+If you want to include loan IDs directly in the file names of the downloaded
+agreements, you can use the `add_loan_ids.sh` script. Take the list of loan IDs
+from the first column of `Investments.xlsx` and save it to a plain text file.
+If you have saved the list to `loan_ids.lst`, run the script like this:
+```
+./add_loan_ids.sh loan_ids.lst
+```
+
+This will attempt to rename all files in the current directory ending in `.pdf`
+so make sure that the directory does not contain other PDF files. The script
+uses the technique described above to correlate loan IDs with agreement IDs.
+You should still check the result manually to be sure.
